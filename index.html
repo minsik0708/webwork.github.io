@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악 장르 소개</title>
+</head>
+<body>
+    <header>
+        <div style="position: absolute; right: 10px; color: rgb(255, 255, 255); z-index: 1;">202402952 오민식</div>
+    <h1>음악 장르 탐험</h1>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            justify-content: center;
+            height: 100px;
+            background-image: url('music.jpg');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <style>
+        .button-container {
+            height: calc(100vh - 100px);
+            margin-top: 100px;
+            text-align: center;
+        }
+        .button {
+            width: 50%;
+            height: 50%;
+            float: left;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgb(0, 0, 0);
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            border: none;
+        }
+        .rock {
+            background-image: url('rock.jpg');
+        }
+        .jazz {
+            background-image: url('jazz.jpg');
+        }
+        .pop {
+            background-image: url('pop.jpg');
+        }
+        .kpop {
+            background-image: url('kpop.jpg');
+        }
+        .button:hover {
+            filter: brightness(50%);
+        }
+    </style>
+    </header>
+    <div class="button-container">
+        <button class="button rock" onclick="location.href='rock.html'">록</button>
+        <button class="button jazz" onclick="location.href='jazz.html'">재즈</button>
+        <button class="button pop" onclick="location.href='pop.html'">팝</button>
+        <button class="button kpop" onclick="location.href='kpop.html'">K-팝</button>
+    </div>
+</body>
+</html>
